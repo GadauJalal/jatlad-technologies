@@ -31,6 +31,7 @@ export async function POST(request: NextRequest) {
 
     // In production this would persist to DB or send via email service.
     // For MVP we log and return success.
+    // eslint-disable-next-line no-console
     console.log('[contact] New submission:', {
       name: name.trim(),
       email: email.trim(),
